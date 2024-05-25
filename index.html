@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <select id="theme-selector">
+        <option value="default">Default Theme</option>
+        <option value="theme1">Theme 1</option>
+        <option value="theme2">Theme 2</option>
+        <option value="theme3">Theme 3</option>
+        <option value="theme4">Theme 4</option>
+        <option value="theme5">Theme 5</option>
+      </select>
+      <select id="font-selector">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="Georgia, serif">Georgia</option>
+        <option value="Verdana, sans-serif">Verdana</option>
+      </select>
+      <button id="download-btn">Download</button>
+    </div>
+    <div class="container">
+      <div class="editor">
+        <textarea
+          id="markdown-input"
+          placeholder="Write your resume in Markdown here..."
+        ></textarea>
+      </div>
+      <div class="preview">
+        <iframe id="preview-frame"></iframe>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.0/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
